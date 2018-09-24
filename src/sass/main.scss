@@ -3,6 +3,76 @@
     padding: 0;
 }
 
+
+$color-header: #414141;
+$color-background: #CCDFCB;
+$color-girl: #FF6A5C;
+$color-boy: #056571;
+
 body {
     font-family: 'Nunito Sans', sans-serif;
+    background-color: $color-background;
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: $color-header;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .home {
+        padding-left: 3vw;
+    }
+    .title {
+        padding-right: 3vw;
+    }
+}
+
+.container {
+    width: 100wv;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sexBox {
+    width: 70vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    .female {
+        width: 50%;
+        height: 100%;
+        background-color: $color-girl;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            font-weight: bold;
+        }
+    }
+    .male {
+        width: 50%;
+        height: 100%;
+        background-color: $color-boy;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            font-weight: bold;
+        }
+    }
 }
